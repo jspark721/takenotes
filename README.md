@@ -1,4 +1,4 @@
-== TAKE✏️️NOTES
+## TAKE✏️️NOTES
 
 A simple note-taking application created using Ruby on Rails
 

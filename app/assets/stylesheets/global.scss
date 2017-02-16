@@ -1,4 +1,4 @@
-$blue: #4ABDAC;
+$blue: #4B6D9D;
 $light_blue: #99CED4;
 $blush: #EEB6B7;
 $gray: #6E7276;
@@ -58,10 +58,11 @@ button, .button {
 }
 
 a {
-  color: $blue;
+  color: $light_blue;
   text-decoration: none;
+  text-transform: lowercase;
   &:hover {
-    color: $gray;
+    color: $blue;
   }
 }
 
@@ -70,26 +71,29 @@ header {
   top: 0;
   width: 100%;
   position: fixed;
-  padding: 1.75rem 0;
-  border-bottom: 7px solid $blue;
+  padding: 1rem 0;
+  border-bottom: 7px solid $light_blue;
   .header_inner {
     width: 90%;
     margin: 0 auto;
     #logo {
       display: inline-block;
-      width: 10rem;
       float: left;
+      img {
+        width: 10rem;
+      }
     }
     nav {
       float: right;
       a {
         text-decoration: none;
         color: white;
-        font-size: 1.1rem;
-        line-height: 1.5;
+        font-size: .9rem;
+        line-height: 2.4;
         margin-left: 1rem;
+        text-transform: lowercase;
         &:hover {
-          color: $blue;
+          color: $light_blue;
         }
       }
     }

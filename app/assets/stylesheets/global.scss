@@ -7,7 +7,6 @@ $light_gray: #C0C1C1;
 @mixin bold_font {
   font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 * {
@@ -43,7 +42,7 @@ body {
 button, .button {
   border: none;
   outline: none;
-  background: $blue;
+  background: $blush;
   padding: 1rem 3.5rem;
   border-radius: 2rem;
   a {

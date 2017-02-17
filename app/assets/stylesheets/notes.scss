@@ -8,6 +8,9 @@
     float: left;
     border-radius: .5rem;
     position: relative;
+    &:hover {
+      background: $blue;
+    }
     .title{
       @include bold_font;
       color: white;

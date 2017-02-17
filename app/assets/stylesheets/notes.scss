@@ -26,7 +26,8 @@
 
 #note_show {
   .title {
-    @include bold_font;
+    color: $blue;
+    text-transform: uppercase;
     font-size: 1.5rem;
     margin-bottom: 1.25rem;
     padding-bottom: 1rem;
@@ -42,13 +43,16 @@
       padding: .5rem 2rem;
       border-radius: 2rem;
       text-decoration: none;
-      color: $gray;
-      border: 1px solid $gray;
-      background: transparent;
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: white;
+      font-weight: bold;
+      background: $blue;
     }
     a:hover {
       background: $light_blue;
       color: white;
+      font-weight: bold;
     }
   }
 }

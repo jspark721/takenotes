@@ -61,7 +61,6 @@ button, .button {
 a {
   color: $light_blue;
   text-decoration: none;
-  text-transform: lowercase;
   &:hover {
     color: $blue;
   }
@@ -92,7 +91,6 @@ header {
         font-size: .9rem;
         line-height: 2.7;
         margin-left: 1rem;
-        text-transform: lowercase;
         &:hover {
           color: $light_blue;
         }

@@ -66,8 +66,13 @@
 			color: $light_blue;
 			margin-bottom: 0;
 		}
+    i {
+      font-size: 2rem;
+      color: $light_blue;
+    }
 		p {
 			color: white;
+      font-size: .9rem;
 		}
 	}
 }

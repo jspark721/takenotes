@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
+  background-color: white;
   width: 100%;
   margin-top: -2em;
   min-height: 500px;
@@ -34,9 +35,10 @@
 
 #mid-content {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: $light_blue;
-  padding: 3.5rem 0;
+  padding: 5.5rem 1rem;
+  background-color: white;
   .quote {
     margin: 0 0 .5rem 0;
   }
@@ -69,6 +71,15 @@
 		width: 33.3333%;
 		padding: 1.5rem 2.5%;
 		float: left;
+    opacity: 0;
+    z-index: -1;
+    transform:translateX(-50px);
+    transition: all 0.5s ease-in-out;
+    &.is-showing {
+      opacity: 1;
+      transform: translateX(0px)
+    }
+
 		h2 {
 			@include bold_font;
 			color: $light_blue;

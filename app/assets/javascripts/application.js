@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+  console.log(wScroll);
+
+  if (wScroll > ($('.callout').offset().top)/2) {
+    $('.callout').each(function(){
+      $('.callout').addClass('is-showing');
+    });
+  }
+  if (wScroll < ($('.callout').offset().top)/2) {
+    $('.callout').each(function(){
+      $('.callout').removeClass('is-showing');
+    });
+  }
+});

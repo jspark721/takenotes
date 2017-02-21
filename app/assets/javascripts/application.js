@@ -16,19 +16,26 @@
 //= require_tree .
 $(document).ready(function(){
   $('.banner_content').fadeIn(2000);
+  $('.quote').fadeIn(4000);
 });
 
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
-  if (wScroll > ($('.callout').offset().top)/2) {
+  if (wScroll > ($('.callout').offset().top)/3) {
     $('.callout').each(function(){
       $('.callout').addClass('is-showing');
     });
   }
-  if (wScroll < ($('.callout').offset().top)/2) {
+  if (wScroll < ($('.callout').offset().top)/3) {
     $('.callout').each(function(){
       $('.callout').removeClass('is-showing');
+    });
+  }
+
+  if (wScroll > ($('.cta-content').offset().top)/2){
+    $('.cta-content').css({
+      'opacity' : '1'
     });
   }
 });

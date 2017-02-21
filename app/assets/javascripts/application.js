@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
+  $('body').removeClass('no-fouc');
   $('.banner_content').fadeIn(2000);
   $('.quote').fadeIn(4000);
 });

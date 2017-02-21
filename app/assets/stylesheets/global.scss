@@ -17,6 +17,9 @@ $light_gray: #C0C1C1;
 }
 
 body {
+  .no-fouc {
+    display:none;
+  }
   padding-top: 4.5em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }

@@ -12,9 +12,9 @@
   min-height: 500px;
   display: table;
   .banner_content {
-    display: table-cell;
-    vertical-align: middle;
+    display: none;
     text-align: center;
+    margin-top: 5rem;
     h1 {
       @include bold_font;
       color: white;

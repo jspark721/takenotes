@@ -14,10 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $('.banner_content').fadeIn(2000);
+});
 
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
-  console.log(wScroll);
 
   if (wScroll > ($('.callout').offset().top)/2) {
     $('.callout').each(function(){

@@ -70,6 +70,22 @@ a {
   text-decoration: none;
 }
 
+#notice_wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.85;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: $light_blue;
+  font-size: .75rem;
+  letter-spacing: .08rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
 header {
   background: $gray;
   top: 0;

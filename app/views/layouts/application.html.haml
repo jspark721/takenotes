@@ -20,7 +20,10 @@
           = link_to "About", root_path
           = link_to "Log In", new_user_session_path
           = link_to "Try Now", new_user_registration_path, class: "try-now"
-  %notice= notice
-  %alert= alert
+
+  - if notice || alert
+    #notice_wrapper
+      %notice= notice
+      %alert= alert
 
   =yield

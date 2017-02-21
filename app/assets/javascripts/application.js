@@ -18,6 +18,7 @@ $(document).ready(function(){
   $('body').removeClass('no-fouc');
   $('.banner_content').fadeIn(2000);
   $('.quote').fadeIn(4000);
+  $('#notice_wrapper').fadeOut(4000);
 });
 
 $(window).scroll(function(){
